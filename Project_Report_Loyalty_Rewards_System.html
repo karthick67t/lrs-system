@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Project Report - Enterprise Loyalty Rewards Management System</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 25mm 20mm 25mm 20mm;
+  }
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #000;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    page-break-after: always;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 250mm;
+    padding-bottom: 15mm;
+  }
+
+  .page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 11pt;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .justify {
+    text-align: justify;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  h1.doc-title {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  h2.chapter-title {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  h3.section-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  h4.subsection-title {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-align: justify;
+    text-indent: 0;
+    margin-bottom: 14px;
+  }
+
+  ul, ol {
+    margin-bottom: 14px;
+    padding-left: 24px;
+  }
+
+  li {
+    text-align: justify;
+    margin-bottom: 6px;
+  }
+
+  table.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  table.report-table th, table.report-table td {
+    border: 1px solid #000;
+    padding: 8px 12px;
+    vertical-align: top;
+    font-size: 11pt;
+  }
+
+  table.report-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .code-block {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9.5pt;
+    background: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 12px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .header-logo {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .header-logo img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .header-text {
+    font-size: 11pt;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .header-subtext {
+    font-size: 9.5pt;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 4px;
+  }
+
+  .signature-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 60px;
+  }
+
+  .signature-table td {
+    border: none;
+    vertical-align: top;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  .fig-caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 11pt;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .fig-placeholder {
+    width: 90%;
+    height: 180px;
+    border: 1px dashed #666;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+    font-size: 11pt;
+    color: #444;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: TITLE PAGE -->
+<div class="page">
+  <div class="header-text">
+    SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY<br>
+    <span style="font-weight: normal; font-size: 9pt;">An Autonomous Institution | Approved by AICTE | Affiliated to Anna University | Accredited by NAAC with A++ Grade<br>
+    Kuniamuthur, Coimbatore – 641008<br>
+    Phone: (0422)-2678001 (7 Lines) | Email: info@skcet.ac.in | Website: www.skcet.ac.in</span>
+  </div>
+  <br><br>
+
+  <h1 class="doc-title" style="margin-top: 30px;">ENTERPRISE LOYALTY REWARDS MANAGEMENT SYSTEM</h1>
+
+  <div class="center bold" style="font-size: 14pt; margin-top: 30px;">A PROJECT REPORT</div>
+  <div class="center" style="font-style: italic; margin-top: 15px;">Submitted by</div>
+
+  <div class="center bold" style="font-size: 14pt; margin-top: 25px;">
+    KARTHICK GEETHANATH (727723EUCS501)
+  </div>
+
+  <div class="center" style="font-style: italic; margin-top: 35px;">
+    In partial fulfilment for the award of the degree<br>of
+  </div>
+
+  <div class="center bold" style="font-size: 13pt; margin-top: 25px;">
+    BACHELOR OF ENGINEERING<br>IN<br>COMPUTER SCIENCE AND ENGINEERING
+  </div>
+
+  <div class="center bold" style="font-size: 12pt; margin-top: 40px;">
+    SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY<br>
+    <span style="font-weight: normal; font-size: 9.5pt;">An Autonomous Institution | Approved by AICTE | Affiliated to Anna University | Accredited by NAAC with A++ Grade<br>
+    Kuniamuthur, Coimbatore – 641008.</span>
+  </div>
+
+  <div class="center bold" style="margin-top: 40px;">August 2025</div>
+</div>
+
+<!-- PAGE 2: SUSTAINABLE DEVELOPMENT GOALS -->
+<div class="page">
+  <div class="header-text">
+    SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY<br>
+    <span style="font-weight: normal; font-size: 9pt;">An Autonomous Institution | Approved by AICTE | Affiliated to Anna University | Accredited by NAAC with A++ Grade<br>
+    Kuniamuthur, Coimbatore – 641008</span>
+  </div>
+  <br>
+
+  <h2 class="chapter-title">SUSTAINABLE DEVELOPMENT GOALS</h2>
+
+  <p class="justify">
+    The Sustainable Development Goals are a collection of 17 global goals designed to be a blueprint to achieve a better and more sustainable future for all. The SDGs, set in 2015 by the United Nations General Assembly and intended to be achieved by the year 2030. In 2015, 195 nations agreed as a blueprint that they can change the world for the better. The project is based on the relevant global goals.
+  </p>
+
+  <table class="report-table" style="margin-top: 25px;">
+    <thead>
+      <tr>
+        <th style="width: 45%;">Questions</th>
+        <th style="width: 55%;">Answer Samples</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="bold">Which SDGs does the project directly address?</td>
+        <td>SDG 8: Decent Work and Economic Growth & SDG 9: Industry, Innovation, and Infrastructure – by promoting digitalized retail transaction processing, transparent rewards management, and secure financial oversight.</td>
+      </tr>
+      <tr>
+        <td class="bold">What strategies or actions are being implemented to achieve these goals?</td>
+        <td>Digital enterprise loyalty platform to eliminate paper-based tracking, automate point calculations, and ensure fraud detection across customer transactions.</td>
+      </tr>
+      <tr>
+        <td class="bold">How is progress measured and reported in relation to the SDGs?</td>
+        <td>Tracking active user engagement, customer retention rates, point redemption efficiency, and automated audit logs.</td>
+      </tr>
+      <tr>
+        <td class="bold">How were these goals identified as relevant to the project’s objectives?</td>
+        <td>Helps enterprises manage customer retention, streamline rewards distribution, eliminate fraud, and support sustainable digital business practices.</td>
+      </tr>
+      <tr>
+        <td class="bold">Are there any partnerships or collaborations in place to enhance this impact?</td>
+        <td>Working with retail partner merchants, financial analytics providers, and secure payment processing services.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- PAGE 3: BONAFIDE CERTIFICATE -->
+<div class="page">
+  <div class="page-footer">ii</div>
+  <div class="header-text">
+    SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY<br>
+    <span style="font-weight: normal; font-size: 9pt;">An Autonomous Institution | Approved by AICTE | Affiliated to Anna University | Accredited by NAAC with A++ Grade<br>
+    Kuniamuthur, Coimbatore – 641008</span>
+  </div>
+  <br>
+
+  <h2 class="chapter-title" style="margin-top: 25px;">BONAFIDE CERTIFICATE</h2>
+
+  <p class="justify" style="margin-top: 30px; line-height: 1.8;">
+    Certified that this project report titled <strong>“Enterprise Loyalty Rewards Management System”</strong> is the Bonafide work of <strong>KARTHICK GEETHANATH (727723EUCS501)</strong> who carried out the project work under my supervision.
+  </p>
+
+  <table class="signature-table" style="margin-top: 70px;">
+    <tr>
+      <td style="width: 50%;">
+        <span class="bold">SIGNATURE</span><br><br>
+        Dr. S.V. SUDHA<br>
+        <span class="bold">HEAD OF THE DEPARTMENT</span><br>
+        Professor<br>
+        Computer Science and Engineering<br>
+        Sri Krishna College of Engineering and Technology<br>
+        Kuniyamuthur, Coimbatore–641008.
+      </td>
+      <td style="width: 50%; padding-left: 20px;">
+        <span class="bold">SIGNATURE</span><br><br>
+        Ms. Gayathri K<br>
+        <span class="bold">SUPERVISOR</span><br>
+        Professor<br>
+        Computer Science and Engineering<br>
+        Sri Krishna College of Engineering and Technology<br>
+        Kuniyamuthur, Coimbatore–641008.
+      </td>
+    </tr>
+  </table>
+
+  <p style="margin-top: 70px;">
+    Submitted for the Project viva-voce examination held on ____________________
+  </p>
+
+  <table style="width: 100%; margin-top: 60px;">
+    <tr>
+      <td class="bold">INTERNAL EXAMINER</td>
+      <td class="bold" style="text-align: right;">EXTERNAL EXAMINER</td>
+    </tr>
+  </table>
+</div>
+
+<!-- PAGE 4: ACKNOWLEDGEMENT -->
+<div class="page">
+  <div class="page-footer">iii</div>
+
+  <h2 class="chapter-title" style="margin-top: 40px;">ACKNOWLEDGEMENT</h2>
+
+  <p class="justify" style="margin-top: 35px; line-height: 1.8;">
+    At this juncture, we take the opportunity to convey our sincere thanks and gratitude to the management of the college for providing all the facilities to us.
+  </p>
+
+  <p class="justify" style="line-height: 1.8;">
+    We wish to convey our gratitude to our college principal, <strong>Dr. K. Porkumaran</strong> for forwarding us to do our project and offering adequate duration to complete our project.
+  </p>
+
+  <p class="justify" style="line-height: 1.8;">
+    We would like to express our grateful thanks to <strong>Dr. Sudha S. V</strong> Head of the department, Department of Computer Science and Engineering for her encouragement and valuable guidance to this project.
+  </p>
+
+  <p class="justify" style="line-height: 1.8;">
+    We extend my gratitude to our beloved guide <strong>Ms. K. Gayathri</strong> Assistant Professor, Department of Computer Science and Engineering for her constant support and immense help at all stages of the project.
+  </p>
+</div>
+
+<!-- PAGE 5: ABSTRACT -->
+<div class="page">
+  <div class="page-footer">iv</div>
+
+  <h2 class="chapter-title" style="margin-top: 40px;">ABSTRACT</h2>
+
+  <p class="justify" style="line-height: 1.8;">
+    The rapid growth of retail commerce and digital services has increased the demand for efficient, scalable customer loyalty and rewards management platforms. Traditional paper-based or disjointed reward tracking methods often suffer from points accounting inaccuracies, lack of transparency, fraud vulnerability, and difficulties in monitoring customer retention, making it challenging for administrators and staff to manage customer engagement effectively. This project aims to develop a comprehensive, full-stack <strong>Enterprise Loyalty Rewards Management System</strong> built using ReactJS, Java Spring Boot, Spring Security, and PostgreSQL that simplifies and streamlines the entire customer rewards lifecycle.
+  </p>
+  <p class="justify" style="line-height: 1.8;">
+    The system provides a centralized multi-role platform enabling Customers to track points and redeem tier rewards, Staff to allocate purchase points seamlessly, Loyalty Managers to configure reward tiers and challenges, and Super Admins to oversee security audit logs, fraud analytics, and system announcements. Key features include an automated FIFO (First-In, First-Out) points expiry engine, real-time fraud detection rules, dynamic tier calculation (Bronze, Silver, Gold, Platinum), role-based JWT authentication, and administrative CSV/PDF export tools. By providing strict role-based access control (RBAC) and traceable point accounting, the platform eliminates double-crediting, prevents unauthorized account modifications, and delivers an intuitive, reliable experience for all enterprise stakeholders.
+  </p>
+</div>
+
+<!-- PAGE 6: TABLE OF CONTENTS PART 1 -->
+<div class="page">
+  <div class="page-footer">v</div>
+
+  <h2 class="chapter-title" style="margin-top: 30px;">TABLE OF CONTENTS</h2>
+
+  <table style="width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 11pt;">
+    <tr class="bold">
+      <td style="width: 15%;">CHAPTER NO.</td>
+      <td style="width: 70%;">TITLE</td>
+      <td style="width: 15%; text-align: right;">PAGE</td>
+    </tr>
+    <tr><td colspan="3"><hr></td></tr>
+    <tr><td></td><td><strong>ACKNOWLEDGEMENT</strong></td><td style="text-align: right;">iii</td></tr>
+    <tr><td></td><td><strong>ABSTRACT</strong></td><td style="text-align: right;">iv</td></tr>
+    <tr><td></td><td><strong>LIST OF TABLES</strong></td><td style="text-align: right;">vii</td></tr>
+    <tr><td></td><td><strong>LIST OF FIGURES</strong></td><td style="text-align: right;">viii</td></tr>
+    <tr><td></td><td><strong>LIST OF ABBREVIATIONS</strong></td><td style="text-align: right;">ix</td></tr>
+    <tr class="bold"><td style="padding-top: 15px;">1</td><td style="padding-top: 15px;">INTRODUCTION</td><td style="padding-top: 15px; text-align: right;">1</td></tr>
+    <tr><td>1.1</td><td>OVERVIEW</td><td style="text-align: right;">1</td></tr>
+    <tr><td>1.2</td><td>COMPONENTS OF SYSTEM</td><td style="text-align: right;">2</td></tr>
+    <tr><td>1.3</td><td>ADVANCED TECHNOLOGIES</td><td style="text-align: right;">3</td></tr>
+    <tr><td>1.4</td><td>GLOBAL PERSPECTIVES</td><td style="text-align: right;">4</td></tr>
+    <tr class="bold"><td style="padding-top: 15px;">2</td><td style="padding-top: 15px;">SYSTEM ANALYSIS</td><td style="padding-top: 15px; text-align: right;">5</td></tr>
+    <tr><td>2.1</td><td>EXISTING SYSTEM</td><td style="text-align: right;">5</td></tr>
+    <tr><td>2.1.1</td><td>DRAWBACKS</td><td style="text-align: right;">6</td></tr>
+    <tr><td>2.2</td><td>PROBLEM DEFINITION</td><td style="text-align: right;">7</td></tr>
+    <tr><td>2.3</td><td>PROPOSED SYSTEM</td><td style="text-align: right;">8</td></tr>
+    <tr><td>2.3.1</td><td>ADVANTAGES</td><td style="text-align: right;">8</td></tr>
+    <tr class="bold"><td style="padding-top: 15px;">3</td><td style="padding-top: 15px;">SYSTEM REQUIREMENTS</td><td style="padding-top: 15px; text-align: right;">9</td></tr>
+    <tr><td>3.1</td><td>HARDWARE REQUIREMENTS</td><td style="text-align: right;">9</td></tr>
+    <tr><td>3.2</td><td>SOFTWARE REQUIREMENTS</td><td style="text-align: right;">9</td></tr>
+    <tr><td>3.3</td><td>SOFTWARE DESCRIPTION</td><td style="text-align: right;">9</td></tr>
+    <tr><td>3.3.1</td><td>FRONTEND</td><td style="text-align: right;">10</td></tr>
+    <tr><td>3.3.2</td><td>BACKEND</td><td style="text-align: right;">12</td></tr>
+  </table>
+</div>
+
+<!-- PAGE 7: TABLE OF CONTENTS PART 2 -->
+<div class="page">
+  <div class="page-footer">vi</div>
+
+  <table style="width: 100%; border-collapse: collapse; margin-top: 40px; font-size: 11pt;">
+    <tr class="bold">
+      <td style="width: 15%;">CHAPTER NO.</td>
+      <td style="width: 70%;">TITLE</td>
+      <td style="width: 15%; text-align: right;">PAGE</td>
+    </tr>
+    <tr><td colspan="3"><hr></td></tr>
+    <tr class="bold"><td>4</td><td>SYSTEM DESIGN</td><td style="text-align: right;">14</td></tr>
+    <tr><td>4.1</td><td>MODULE DESCRIPTION</td><td style="text-align: right;">14</td></tr>
+    <tr><td>4.1.1</td><td>USER MANAGEMENT</td><td style="text-align: right;">14</td></tr>
+    <tr><td>4.1.2</td><td>POINTS AND TIER MANAGEMENT</td><td style="text-align: right;">15</td></tr>
+    <tr><td>4.1.3</td><td>REWARD AND REDEMPTION MANAGEMENT</td><td style="text-align: right;">16</td></tr>
+    <tr><td>4.1.4</td><td>ADMIN DASHBOARD & FRAUD ANALYTICS</td><td style="text-align: right;">16</td></tr>
+    <tr><td>4.2</td><td>USE CASE DIAGRAM</td><td style="text-align: right;">17</td></tr>
+    <tr><td>4.3</td><td>SEQUENCE DIAGRAM</td><td style="text-align: right;">18</td></tr>
+    <tr><td>4.4</td><td>DATA FLOW DIAGRAM</td><td style="text-align: right;">19</td></tr>
+    <tr class="bold"><td style="padding-top: 15px;">5</td><td style="padding-top: 15px;">TESTING</td><td style="padding-top: 15px; text-align: right;">20</td></tr>
+    <tr><td>5.1</td><td>UNIT TESTING</td><td style="text-align: right;">20</td></tr>
+    <tr><td>5.2</td><td>INTEGRATION TESTING</td><td style="text-align: right;">20</td></tr>
+    <tr><td>5.3</td><td>SECURITY AND AUTHENTICATION (RBAC & JWT)</td><td style="text-align: right;">20</td></tr>
+    <tr><td>5.4</td><td>TEST CASES</td><td style="text-align: right;">22</td></tr>
+    <tr><td>5.4.1</td><td>TEST CASE I</td><td style="text-align: right;">23</td></tr>
+    <tr><td>5.4.2</td><td>TEST CASE II</td><td style="text-align: right;">23</td></tr>
+    <tr class="bold"><td style="padding-top: 15px;">6</td><td style="padding-top: 15px;">CONCLUSION AND FUTURE WORK</td><td style="padding-top: 15px; text-align: right;">25</td></tr>
+    <tr><td>6.1</td><td>CONCLUSION</td><td style="text-align: right;">25</td></tr>
+    <tr><td>6.2</td><td>FUTURE WORK</td><td style="text-align: right;">25</td></tr>
+    <tr class="bold"><td style="padding-top: 15px;">7</td><td style="padding-top: 15px;">APPENDICES</td><td style="padding-top: 15px; text-align: right;">26</td></tr>
+    <tr><td></td><td>APPENDIX I - SOURCE CODE</td><td style="text-align: right;">26</td></tr>
+    <tr><td></td><td>APPENDIX II - SCREENSHOTS</td><td style="text-align: right;">28</td></tr>
+    <tr class="bold"><td style="padding-top: 15px;"></td><td style="padding-top: 15px;">REFERENCES</td><td style="padding-top: 15px; text-align: right;">33</td></tr>
+  </table>
+</div>
+
+<!-- PAGE 8: LIST OF TABLES -->
+<div class="page">
+  <div class="page-footer">vii</div>
+
+  <h2 class="chapter-title" style="margin-top: 40px;">LIST OF TABLES</h2>
+
+  <table class="report-table" style="margin-top: 30px;">
+    <thead>
+      <tr>
+        <th style="width: 20%;">TABLE NO.</th>
+        <th style="width: 60%;">TITLE</th>
+        <th style="width: 20%; text-align: right;">Page No.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4.1.1</td>
+        <td>User Management Schema</td>
+        <td style="text-align: right;">14</td>
+      </tr>
+      <tr>
+        <td>4.1.2</td>
+        <td>Points & Tier Calculation Schema</td>
+        <td style="text-align: right;">15</td>
+      </tr>
+      <tr>
+        <td>4.1.3</td>
+        <td>Reward & Redemption Schema</td>
+        <td style="text-align: right;">16</td>
+      </tr>
+      <tr>
+        <td>4.1.4</td>
+        <td>Admin Dashboard & Fraud Analytics Overview</td>
+        <td style="text-align: right;">16</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- PAGE 9: LIST OF FIGURES -->
+<div class="page">
+  <div class="page-footer">viii</div>
+
+  <h2 class="chapter-title" style="margin-top: 40px;">LIST OF FIGURES</h2>
+
+  <table class="report-table" style="margin-top: 30px;">
+    <thead>
+      <tr>
+        <th style="width: 20%;">FIGURE No.</th>
+        <th style="width: 60%;">TITLE</th>
+        <th style="width: 20%; text-align: right;">PAGE No.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>3.1</td><td>VS Code Logo</td><td style="text-align: right;">9</td></tr>
+      <tr><td>4.1</td><td>Use Case Diagram</td><td style="text-align: right;">17</td></tr>
+      <tr><td>4.2</td><td>Sequence Diagram</td><td style="text-align: right;">18</td></tr>
+      <tr><td>4.3</td><td>Data Flow Diagram</td><td style="text-align: right;">19</td></tr>
+      <tr><td>5.1</td><td>Storing the token in local storage</td><td style="text-align: right;">21</td></tr>
+      <tr><td>5.2</td><td>Authenticating the user using bearer token</td><td style="text-align: right;">22</td></tr>
+      <tr><td>5.3</td><td>Test case I</td><td style="text-align: right;">23</td></tr>
+      <tr><td>5.4</td><td>Test case II</td><td style="text-align: right;">23</td></tr>
+      <tr><td>A.2.1</td><td>Admin Login Page</td><td style="text-align: right;">28</td></tr>
+      <tr><td>A.2.2</td><td>Admin Dashboard</td><td style="text-align: right;">28</td></tr>
+      <tr><td>A.2.3</td><td>Member Management Roster</td><td style="text-align: right;">29</td></tr>
+      <tr><td>A.2.4</td><td>Earn & Deduct Points Portal</td><td style="text-align: right;">29</td></tr>
+      <tr><td>A.2.5</td><td>Transaction Ledger Audit & Export</td><td style="text-align: right;">30</td></tr>
+      <tr><td>A.2.6</td><td>Customer Login Page</td><td style="text-align: right;">30</td></tr>
+      <tr><td>A.2.7</td><td>Customer Registration Page</td><td style="text-align: right;">31</td></tr>
+      <tr><td>A.2.8</td><td>Customer Dashboard & Tier Progress</td><td style="text-align: right;">31</td></tr>
+      <tr><td>A.2.9</td><td>Reward Catalog & Redemption</td><td style="text-align: right;">32</td></tr>
+      <tr><td>A.2.10</td><td>System Announcement Bell Dropdown</td><td style="text-align: right;">32</td></tr>
+      <tr><td>A.2.11</td><td>Customer Profile Management</td><td style="text-align: right;">32</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- PAGE 10: LIST OF ABBREVIATIONS -->
+<div class="page">
+  <div class="page-footer">ix</div>
+
+  <h2 class="chapter-title" style="margin-top: 40px;">LIST OF ABBREVIATIONS</h2>
+
+  <table class="report-table" style="margin-top: 30px;">
+    <thead>
+      <tr>
+        <th style="width: 15%;">S. No</th>
+        <th style="width: 35%;">ABBREVIATIONS</th>
+        <th style="width: 50%;">EXPANSION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>RBAC</td><td>Role-Based Access Control</td></tr>
+      <tr><td>2</td><td>RAM</td><td>Random Access Memory</td></tr>
+      <tr><td>3</td><td>GB</td><td>Giga Bytes</td></tr>
+      <tr><td>4</td><td>VS Code</td><td>Visual Studio Code</td></tr>
+      <tr><td>5</td><td>OS</td><td>Operating System</td></tr>
+      <tr><td>6</td><td>HTTP</td><td>Hyper Text Transfer Protocol</td></tr>
+      <tr><td>7</td><td>JPA</td><td>Java Persistence API</td></tr>
+      <tr><td>8</td><td>API</td><td>Application Programming Interface</td></tr>
+      <tr><td>9</td><td>JDBC</td><td>Java Database Connectivity</td></tr>
+      <tr><td>10</td><td>SQL</td><td>Sequential Query Language</td></tr>
+      <tr><td>11</td><td>UI</td><td>User Interface</td></tr>
+      <tr><td>12</td><td>DOM</td><td>Document Object Model</td></tr>
+      <tr><td>13</td><td>JSX</td><td>JavaScript XML</td></tr>
+      <tr><td>14</td><td>JWT</td><td>JSON Web Token</td></tr>
+      <tr><td>15</td><td>UML</td><td>Unified Modelling Language</td></tr>
+      <tr><td>16</td><td>DFD</td><td>Data Flow Diagram</td></tr>
+      <tr><td>17</td><td>FIFO</td><td>First-In, First-Out</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- PAGE 11: CHAPTER 1 INTRODUCTION -->
+<div class="page">
+  <div class="page-footer">1</div>
+
+  <h2 class="chapter-title" style="margin-top: 30px;">CHAPTER 1<br>INTRODUCTION</h2>
+
+  <h3 class="section-title">1.1 OVERVIEW</h3>
+  <p class="justify">
+    The rapid expansion of retail enterprises and digital service management has increased the demand for efficient and organized customer loyalty management. Traditional rewards methods often lead to point calculation discrepancies, inefficient tier tracking, manual errors, and security vulnerabilities. These challenges not only frustrate customers but also complicate operational governance for enterprise store managers and system administrators.
+  </p>
+  <p class="justify">
+    The Enterprise Loyalty Rewards Management System project aims to address these critical issues by providing a centralized, user-friendly, and multi-role platform for customers, staff, loyalty managers, and super administrators. The system simplifies the process of earning purchase points, redeeming tier-specific rewards, tracking point expiration via FIFO logic, and monitoring transaction history, while enabling administrators to govern role permissions, detect fraud, and broadcast announcements.
+  </p>
+  <p class="justify">
+    This platform allows customers to view real-time point balances, track tier progress (Bronze, Silver, Gold, Platinum), and manage their profiles conveniently. At the same time, store staff can allocate points for purchases, loyalty managers can create campaigns and store promotions, and super administrators can manage security settings and execute administrative CSV/PDF audit exports.
+  </p>
+  <p class="justify">
+    One of the key benefits of this system is its ability to enforce strict Role-Based Access Control (RBAC), provide real-time transaction updates, and maintain mathematical transparency across all point operations. By overcoming the limitations of traditional loyalty systems, the platform ensures security, operational efficiency, and customer satisfaction for modern enterprise environments.
+  </p>
+</div>
+
+<!-- PAGE 12: CHAPTER 1 COMPONENTS OF SYSTEM -->
+<div class="page">
+  <div class="page-footer">2</div>
+
+  <h3 class="section-title">1.2 COMPONENTS OF SYSTEM</h3>
+
+  <h4 class="subsection-title">System Landing Page</h4>
+  <p class="justify">
+    The landing page serves as the entry point for users, providing an overview of the loyalty rewards portal, membership tiers, available catalog rewards, and security features. It allows users to quickly navigate to login/registration forms and explore system capabilities.
+  </p>
+
+  <h4 class="subsection-title">System Dashboard</h4>
+  <p class="justify">
+    The dashboard is the central hub tailored for each role (Super Admin, Loyalty Manager, Staff, Customer). Customers view their points balance, recent rewards, and tier progress, while administrators monitor total transactions, fraud flags, and active members.
+  </p>
+
+  <h4 class="subsection-title">Member Management Roster</h4>
+  <p class="justify">
+    This component enables authorized staff and administrators to search and manage member accounts. Strict role restrictions ensure staff view customers only, loyalty managers access staff and customers, while super admins govern all system accounts.
+  </p>
+
+  <h4 class="subsection-title">Points Management Portal</h4>
+  <p class="justify">
+    Staff and managers can calculate purchase points (1 point per ₹10 spent) and deduct points for redemptions. The backend automatically records transaction history and applies FIFO lot tracking.
+  </p>
+
+  <h4 class="subsection-title">Admin Announcements & Notifications</h4>
+  <p class="justify">
+    Super Admins can broadcast system announcements to active Loyalty Managers and Staff. Notifications appear in real-time in the top notification bell dropdown with unread indicators and 📢 badges.
+  </p>
+
+  <h4 class="subsection-title">User Profile Management</h4>
+  <p class="justify">
+    All registered members can manage their personal profiles, update phone details, change passwords securely, and track individual membership tier statuses.
+  </p>
+</div>
+
+<!-- PAGE 13: CHAPTER 1 ADVANCED TECHNOLOGIES -->
+<div class="page">
+  <div class="page-footer">3</div>
+
+  <h4 class="subsection-title">Booking & Transaction Ledger History</h4>
+  <p class="justify">
+    Users and administrators access a complete audit log of transactions including bill amounts, points earned/deducted, performed-by user details, and timestamp records, promoting complete operational transparency.
+  </p>
+
+  <h4 class="subsection-title">Security and Access Control</h4>
+  <p class="justify">
+    Strong security measures, including Spring Security RBAC, JWT token validation, and password encryption, protect sensitive user data. Controllers explicitly enforce 403 Forbidden responses on unauthorized role access.
+  </p>
+
+  <h3 class="section-title">1.3 ADVANCED TECHNOLOGIES</h3>
+
+  <h4 class="subsection-title">FIFO Point Expiry Engine</h4>
+  <p class="justify">
+    An automated background lot tracking engine consumes earned points on a First-In, First-Out basis, ensuring points expire accurately according to configured policy dates.
+  </p>
+
+  <h4 class="subsection-title">Real-Time Fraud Evaluation</h4>
+  <p class="justify">
+    Rule-based algorithms evaluate transactions in real-time, detecting high-value point additions, unusual frequency, or self-crediting attempts by store staff.
+  </p>
+
+  <h4 class="subsection-title">Administrative Audit Exports</h4>
+  <p class="justify">
+    Super Admins can export filtered transaction history logs into formatted CSV files or OpenPDF-generated official administrative reports for compliance auditing.
+  </p>
+
+  <h4 class="subsection-title">Role-Based JWT Authorization</h4>
+  <p class="justify">
+    Stateless JWT authentication embeds granted authorities into request headers, allowing the Spring Security filter chain to authorize REST endpoints without session overhead.
+  </p>
+
+  <h4 class="subsection-title">Mobile-Responsive Platform</h4>
+  <p class="justify">
+    A responsive React frontend powered by Vite and CSS modules enables seamless management on desktop workstations, tablets, and mobile devices.
+  </p>
+</div>
+
+<!-- PAGE 14: CHAPTER 1 GLOBAL PERSPECTIVES -->
+<div class="page">
+  <div class="page-footer">4</div>
+
+  <h3 class="section-title">1.4 GLOBAL PERSPECTIVES</h3>
+  <p class="justify">
+    Global perspectives on customer loyalty management systems are shaped by digital transformation, evolving consumer expectations, strict data privacy regulations, and the need for secure transaction processing.
+  </p>
+  <ul>
+    <li>
+      <strong>Shift Toward Digital Loyalty Platforms:</strong> Worldwide, retail enterprises are replacing physical card programs with digital loyalty platforms that provide real-time rewards, instant point crediting, and multi-tier benefits.
+    </li>
+    <li>
+      <strong>Integration of Security and Fraud Analytics:</strong> Enterprise loyalty systems globally are integrating AI and rule-based fraud detection to prevent point inflation, insider abuse, and unauthorized account access.
+    </li>
+    <li>
+      <strong>Focus on User Experience and Transparency:</strong> Modern systems emphasize transparent mathematical point tracking, instant notification alerts, and intuitive dashboards to foster customer trust and long-term engagement.
+    </li>
+    <li>
+      <strong>Strict Data Governance and Compliance:</strong> Enterprise platforms adhere to international security standards through encrypted credential storage, role-based access control (RBAC), and verifiable transaction audit trails.
+    </li>
+  </ul>
+</div>
+
+<!-- PAGE 15: CHAPTER 2 SYSTEM ANALYSIS -->
+<div class="page">
+  <div class="page-footer">5</div>
+
+  <h2 class="chapter-title" style="margin-top: 30px;">CHAPTER 2<br>SYSTEM ANALYSIS</h2>
+
+  <h3 class="section-title">2.1 EXISTING SYSTEM</h3>
+  <ul>
+    <li>
+      The current loyalty management approach in many retail stores relies on manual spreadsheets or standalone point-of-sale add-ons to credit points and track redemptions. This often leads to point discrepancies, delayed updates, and limited visibility for customers.
+    </li>
+    <li>
+      Existing digital solutions where available often lack fine-grained Role-Based Access Control (RBAC). Staff members or store managers frequently possess unmonitored privileges to edit balances or assign unauthorized admin roles.
+    </li>
+    <li>
+      For facility administrators, existing tools provide minimal audit logging, lacking automated fraud detection rules, FIFO point expiry management, and administrative CSV/PDF reporting tools.
+    </li>
+    <li>
+      Security and user privacy are often minimal in traditional systems. Plaintext credential handling or basic authentication exposes transaction data to tampering and unauthorized access.
+    </li>
+  </ul>
+</div>
+
+<!-- PAGE 16: CHAPTER 2 DRAWBACKS -->
+<div class="page">
+  <div class="page-footer">6</div>
+
+  <h4 class="subsection-title">2.1.1 DRAWBACKS</h4>
+  <p class="justify">
+    While legacy digital loyalty software improves basic tracking compared to paper stamps, existing solutions face several significant challenges:
+  </p>
+
+  <h4 class="subsection-title">Quality of Service</h4>
+  <ul>
+    <li>
+      <strong>Inconsistent Customer Experience:</strong> Delays in crediting points or resolving redemption issues reduce customer trust and retention.
+    </li>
+    <li>
+      <strong>Lack of Transparency:</strong> Customers cannot trace exact calculations for earned or expired points.
+    </li>
+  </ul>
+
+  <h4 class="subsection-title">Limited Functionality</h4>
+  <ul>
+    <li>
+      <strong>Scope of Features:</strong> Lack of automated FIFO point expiry, real-time fraud flags, and admin announcements.
+    </li>
+    <li>
+      <strong>Integration Gaps:</strong> Inability to produce official PDF audit reports or export filtered transaction ledgers.
+    </li>
+  </ul>
+
+  <h4 class="subsection-title">Security and Privacy</h4>
+  <ul>
+    <li>
+      <strong>Privilege Escalation Risks:</strong> Insecure REST APIs allow lower-level staff to modify admin privileges or credit personal accounts.
+    </li>
+    <li>
+      <strong>Data Security Vulnerabilities:</strong> Weak authentication mechanisms expose customer data to unauthorized disclosure.
+    </li>
+  </ul>
+</div>
+
+<!-- PAGE 17: CHAPTER 2 PROBLEM DEFINITION -->
+<div class="page">
+  <div class="page-footer">7</div>
+
+  <h3 class="section-title">2.2 PROBLEM DEFINITION</h3>
+  <ol>
+    <li>
+      <strong>Quality of Service Issues:</strong> Legacy loyalty management tools suffer from inconsistent point crediting, poor user interfaces, and delayed transaction updates, resulting in customer dissatisfaction and operational bottlenecks.
+    </li>
+    <li>
+      <strong>Security & Authorization Deficiencies:</strong> Lack of strict backend-enforced RBAC enables unauthorized users to view elevated profiles, alter account roles, or manage points outside assigned privileges.
+    </li>
+    <li>
+      <strong>Manual Errors & Fraud Exposure:</strong> Absence of real-time fraud monitoring and automated point expiry rules allows point duplication, unauthorized staff crediting, and loss of accounting auditability.
+    </li>
+  </ol>
+</div>
+
+<!-- PAGE 18: CHAPTER 2 PROPOSED SYSTEM -->
+<div class="page">
+  <div class="page-footer">8</div>
+
+  <h3 class="section-title">2.3 PROPOSED SYSTEM</h3>
+  <ul>
+    <li>
+      <strong>User-Friendly Multi-Role Portal:</strong> Intuitive React frontend tailored specifically for Super Admin, Loyalty Manager, Staff, and Customer roles.
+    </li>
+    <li>
+      <strong>Strict Backend Role-Based Access Control:</strong> Spring Security controllers strictly enforce HTTP 403 Forbidden on unauthorized endpoint calls across all 4 roles.
+    </li>
+    <li>
+      <strong>Automated FIFO Points & Tier Engine:</strong> Automatic calculation of points (1 pt / ₹10 spent), dynamic tier evaluation (Bronze to Platinum), and background FIFO lot expiry.
+    </li>
+    <li>
+      <strong>Real-Time Fraud & Announcement Engine:</strong> Automated fraud flag evaluation for unusual transactions and Super Admin announcement broadcasting to staff/managers with 📢 notification bell integration.
+    </li>
+    <li>
+      <strong>Administrative Audit & Export:</strong> Filtered transaction ledger search with official CSV and OpenPDF export capabilities.
+    </li>
+  </ul>
+
+  <h4 class="subsection-title">2.3.1 ADVANTAGES</h4>
+  <ul>
+    <li>Complete Mathematical Transparency and Auditability</li>
+    <li>Strict Backend-Enforced Security & RBAC Guardrails</li>
+    <li>Reduction of Point Inflation and Fraud Risks</li>
+    <li>Automated Multi-Channel System Announcements</li>
+    <li>Scalable Enterprise Spring Boot Architecture</li>
+  </ul>
+</div>
+
+<!-- PAGE 19: CHAPTER 3 SYSTEM REQUIREMENTS -->
+<div class="page">
+  <div class="page-footer">9</div>
+
+  <h2 class="chapter-title" style="margin-top: 30px;">CHAPTER 3<br>SYSTEM REQUIREMENTS</h2>
+
+  <p class="justify">
+    The hardware and software requirements and the platform description of the system are detailed under sections 3.1, 3.2, and 3.3 respectively.
+  </p>
+
+  <h3 class="section-title">3.1 HARDWARE REQUIREMENTS</h3>
+  <table class="report-table">
+    <tr><td style="width: 40%;" class="bold">1. Processor Type</td><td>Intel Core i5 / AMD Ryzen 5 or higher</td></tr>
+    <tr><td class="bold">2. RAM</td><td>8 GB RAM minimum (16 GB recommended)</td></tr>
+    <tr><td class="bold">3. Hard Disk</td><td>512 GB SSD</td></tr>
+  </table>
+
+  <h3 class="section-title">3.2 SOFTWARE REQUIREMENTS</h3>
+  <table class="report-table">
+    <tr><td style="width: 40%;" class="bold">a. Operating System</td><td>Windows 11 / Linux / macOS</td></tr>
+    <tr><td class="bold">b. IDE / Development Tools</td><td>Visual Studio Code / IntelliJ IDEA</td></tr>
+    <tr><td class="bold">c. Front End Technologies</td><td>ReactJS (v18), Vite, CSS3, JavaScript (ES6+)</td></tr>
+    <tr><td class="bold">d. Back End Technologies</td><td>Java 17, Spring Boot (v3.2.5), Spring Security, Hibernate</td></tr>
+    <tr><td class="bold">e. Database</td><td>PostgreSQL 15+</td></tr>
+  </table>
+
+  <h3 class="section-title">3.3 SOFTWARE DESCRIPTION</h3>
+  <div style="text-align: center; margin: 25px 0;">
+  <svg width="110" height="110" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M74.7 90.7L94.5 80.8V19.2L74.7 9.3L40.2 41.6L19.4 25.8L7.8 31.7L31.5 50L7.8 68.3L19.4 74.2L40.2 58.4L74.7 90.7Z" fill="#007ACC"/>
+    <path d="M74.7 90.7V9.3L94.5 19.2V80.8L74.7 90.7Z" fill="#0066B8"/>
+    <path d="M74.7 9.3L40.2 41.6L19.4 25.8L7.8 31.7L31.5 50L74.7 9.3Z" fill="#007ACC"/>
+    <path d="M19.4 25.8L40.2 41.6L74.7 9.3L19.4 25.8Z" fill="#1F9CF0"/>
+  </svg>
+</div>
+  <div class="fig-caption">Fig. 3.1. VS Code Logo</div>
+</div>
+
+<!-- PAGE 20: CHAPTER 3 FRONTEND REACTJS -->
+<div class="page">
+  <div class="page-footer">10</div>
+
+  <h4 class="subsection-title">3.3.1 FRONTEND</h4>
+  <p class="justify">
+    <strong>ReactJS:</strong> ReactJS is a popular open-source JavaScript library for building user interfaces, particularly for single-page web applications. React follows a component-based architecture, where user interfaces are broken down into modular, reusable components. Each component encapsulates its own state and render logic, making complex UIs easier to maintain and scale. React utilizes a Virtual DOM (Document Object Model) to optimize performance by updating only changed elements in memory before modifying the actual browser DOM.
+  </p>
+  <p class="justify">
+    React uses JSX (JavaScript XML), allowing developers to write HTML-like structures directly within JavaScript code. The application follows a clean unidirectional data flow where state flows downwards from parent to child components via props, while user interactions trigger callbacks upward, maintaining predictable application state.
+  </p>
+</div>
+
+<!-- PAGE 21: CHAPTER 3 FEATURES OF REACTJS -->
+<div class="page">
+  <div class="page-footer">11</div>
+
+  <h4 class="subsection-title">Features of ReactJS</h4>
+  <ol>
+    <li>
+      <strong>Declarative UI:</strong> React makes it easy to create interactive UIs by automatically updating components when application state changes.
+    </li>
+    <li>
+      <strong>Component-Based Architecture:</strong> Reusable UI components maintain their own isolated state, enabling clean separation of concerns.
+    </li>
+    <li>
+      <strong>Virtual DOM Optimization:</strong> Minimizes expensive real DOM manipulation through intelligent diffing algorithms.
+    </li>
+    <li>
+      <strong>JSX Syntax:</strong> Combines structural HTML layout directly with JavaScript component logic.
+    </li>
+    <li>
+      <strong>Unidirectional Data Flow:</strong> Predictable state propagation ensures reliable data rendering across routes.
+    </li>
+  </ol>
+</div>
+
+<!-- PAGE 22: CHAPTER 3 BACKEND JAVA SPRING BOOT -->
+<div class="page">
+  <div class="page-footer">12</div>
+
+  <h4 class="subsection-title">3.3.2 BACKEND Java & Spring Boot</h4>
+  <p class="justify">
+    <strong>Java 17 & Spring Boot 3.2.5:</strong> Java is an enterprise-grade, object-oriented programming language renowned for its platform independence, strong type safety, and robust memory management. Spring Boot provides an open-source Java-based framework used to build microservices and enterprise REST Web APIs. It simplifies Spring application setup by offering auto-configuration, embedded Tomcat server support, and production-ready starter dependencies.
+  </p>
+
+  <h4 class="subsection-title">Core Backend Extensions & Modules</h4>
+  <ol>
+    <li>
+      <strong>Spring Security Web:</strong> Provides comprehensive authentication and role-based authorization guardrails for REST endpoints.
+    </li>
+    <li>
+      <strong>Spring Data JPA:</strong> Simplifies data access layer development using object-relational mapping (ORM) over PostgreSQL tables.
+    </li>
+    <li>
+      <strong>JJWT (JSON Web Token):</strong> Enables stateless bearer token generation and verification for authenticated requests.
+    </li>
+  </ol>
+</div>
+
+<!-- PAGE 23: CHAPTER 3 DEPENDENCIES -->
+<div class="page">
+  <div class="page-footer">13</div>
+
+  <h4 class="subsection-title">Key Maven Project Dependencies</h4>
+  <ol>
+    <li>
+      <strong>Spring Web:</strong> Provides REST controller support, Jackson JSON object mapping, and HTTP request routing.
+    </li>
+    <li>
+      <strong>Spring Boot DevTools:</strong> Enables hot reloading and enhanced development debugging capabilities.
+    </li>
+    <li>
+      <strong>Postgres Driver:</strong> JDBC database driver facilitating high-performance connectivity to PostgreSQL.
+    </li>
+    <li>
+      <strong>OpenPDF:</strong> Open-source PDF library utilized by administrative export services to generate official audit documents.
+    </li>
+  </ol>
+</div>
+
+<!-- PAGE 24: CHAPTER 4 SYSTEM DESIGN -->
+<div class="page">
+  <div class="page-footer">14</div>
+
+  <h2 class="chapter-title" style="margin-top: 30px;">CHAPTER 4<br>SYSTEM DESIGN</h2>
+
+  <h3 class="section-title">4.1 MODULE DESCRIPTION</h3>
+  <ul>
+    <li>User Management & Role Governance</li>
+    <li>Points & Tier Management Engine</li>
+    <li>Reward & Redemption Management</li>
+    <li>Admin Dashboard & Fraud Analytics</li>
+  </ul>
+
+  <h4 class="subsection-title">4.1.1 USER MANAGEMENT</h4>
+  <p class="justify">
+    The user management module governs account profiles across 4 system roles (Super Admin, Loyalty Manager, Staff, Customer). Controllers strictly enforce role hierarchy restrictions so users can only view or edit accounts within their authorized tier.
+  </p>
+</div>
+
+<!-- PAGE 25: CHAPTER 4 USER & POINTS SCHEMAS -->
+<div class="page">
+  <div class="page-footer">15</div>
+
+  <div class="bold center">Table 4.1 User Management Schema</div>
+  <table class="report-table">
+    <thead>
+      <tr><th>Field</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>memberId</td><td>Unique primary key identifier for each member</td></tr>
+      <tr><td>fullName</td><td>Full name of the account holder</td></tr>
+      <tr><td>email</td><td>Unique email address used for login and notifications</td></tr>
+      <tr><td>password</td><td>Encrypted password string</td></tr>
+      <tr><td>role</td><td>Assigned system role (SUPER_ADMIN, LOYALTY_MANAGER, STAFF, CUSTOMER)</td></tr>
+      <tr><td>status</td><td>Account state (ACTIVE / INACTIVE)</td></tr>
+    </tbody>
+  </table>
+
+  <h4 class="subsection-title">4.1.2 POINTS & TIER MANAGEMENT</h4>
+  <p class="justify">
+    Calculates points allocated per purchase bill, updates total balances, calculates tiers (Bronze &lt;1000, Silver &ge;1000, Gold &ge;2500, Platinum &ge;5000), and tracks FIFO lot expiration.
+  </p>
+
+  <div class="bold center">Table 4.2 Points & Tier Calculation Schema</div>
+  <table class="report-table">
+    <thead>
+      <tr><th>Field</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>points</td><td>Current available points balance</td></tr>
+      <tr><td>tier</td><td>Evaluated loyalty tier (BRONZE, SILVER, GOLD, PLATINUM)</td></tr>
+      <tr><td>billAmount</td><td>Purchase invoice total in Indian Rupees (₹)</td></tr>
+      <tr><td>calculatedPoints</td><td>Points earned (floor(billAmount / 10.0))</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- PAGE 26: CHAPTER 4 REWARD & ADMIN DASHBOARD SCHEMAS -->
+<div class="page">
+  <div class="page-footer">16</div>
+
+  <h4 class="subsection-title">4.1.3 REWARD & REDEMPTION MANAGEMENT</h4>
+  <p class="justify">
+    Allows customers to redeem eligible rewards based on available points, creating transaction audit records and consuming FIFO point lots.
+  </p>
+
+  <div class="bold center">Table 4.3 Reward & Redemption Schema</div>
+  <table class="report-table">
+    <thead>
+      <tr><th>Field</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>transactionId</td><td>Unique transaction audit record ID</td></tr>
+      <tr><td>transactionType</td><td>Operation type (EARN, DEDUCT, REDEEM, EXPIRY)</td></tr>
+      <tr><td>pointsTransacted</td><td>Number of points added or deducted</td></tr>
+      <tr><td>previousBalance</td><td>Points balance prior to operation</td></tr>
+      <tr><td>newBalance</td><td>Points balance post operation</td></tr>
+    </tbody>
+  </table>
+
+  <h4 class="subsection-title">4.1.4 ADMIN DASHBOARD & FRAUD ANALYTICS</h4>
+  <p class="justify">
+    Provides central oversight of total members, transaction ledgers, fraud flags, and admin announcements.
+  </p>
+</div>
+
+<!-- PAGE 27: CHAPTER 4 USE CASE DIAGRAM -->
+<div class="page">
+  <div class="page-footer">17</div>
+
+  <h3 class="section-title">4.2 USE CASE DIAGRAM</h3>
+  <p class="justify">
+    A use case diagram illustrates the interactions between system actors (Customer, Staff, Loyalty Manager, Super Admin) and platform use cases.
+  </p>
+  <div style="text-align: center; margin: 15px 0;">
+  <svg width="100%" height="260" viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" style="background:#fcfcfc; border:1px solid #ddd; border-radius:6px;">
+    <!-- System Boundary -->
+    <rect x="190" y="10" width="320" height="240" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <text x="350" y="28" font-family="sans-serif" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">Enterprise Loyalty Rewards System</text>
+    
+    <!-- Actors Left -->
+    <!-- Customer -->
+    <circle cx="50" cy="55" r="10" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="50" y1="65" x2="50" y2="90" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="30" y1="75" x2="70" y2="75" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="50" y1="90" x2="35" y2="110" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="50" y1="90" x2="65" y2="110" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="50" y="125" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Customer</text>
+
+    <!-- Staff -->
+    <circle cx="50" cy="175" r="10" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="50" y1="185" x2="50" y2="210" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="30" y1="195" x2="70" y2="195" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="50" y1="210" x2="35" y2="230" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="50" y1="210" x2="65" y2="230" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="50" y="245" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Store Staff</text>
+
+    <!-- Actors Right -->
+    <!-- Loyalty Manager -->
+    <circle cx="650" cy="55" r="10" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="650" y1="65" x2="650" y2="90" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="630" y1="75" x2="670" y2="75" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="650" y1="90" x2="635" y2="110" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="650" y1="90" x2="665" y2="110" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="650" y="125" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Loyalty Manager</text>
+
+    <!-- Super Admin -->
+    <circle cx="650" cy="175" r="10" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="650" y1="185" x2="650" y2="210" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="630" y1="195" x2="670" y2="195" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="650" y1="210" x2="635" y2="230" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="650" y1="210" x2="665" y2="230" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="650" y="245" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Super Admin</text>
+
+    <!-- Use Cases Ellipses -->
+    <ellipse cx="270" cy="50" rx="60" ry="16" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="270" y="54" font-family="sans-serif" font-size="9.5" text-anchor="middle">Login & Profile</text>
+
+    <ellipse cx="430" cy="50" rx="60" ry="16" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="430" y="54" font-family="sans-serif" font-size="9.5" text-anchor="middle">View Points & Tiers</text>
+
+    <ellipse cx="270" cy="100" rx="60" ry="16" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="270" y="104" font-family="sans-serif" font-size="9.5" text-anchor="middle">Redeem Rewards</text>
+
+    <ellipse cx="430" cy="100" rx="60" ry="16" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="430" y="104" font-family="sans-serif" font-size="9.5" text-anchor="middle">Allocate Purchase Pts</text>
+
+    <ellipse cx="270" cy="150" rx="60" ry="16" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="270" y="154" font-family="sans-serif" font-size="9.5" text-anchor="middle">Manage Roster</text>
+
+    <ellipse cx="430" cy="150" rx="60" ry="16" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="430" y="154" font-family="sans-serif" font-size="9.5" text-anchor="middle">Fraud Analytics</text>
+
+    <ellipse cx="350" cy="205" rx="75" ry="18" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.2"/>
+    <text x="350" y="209" font-family="sans-serif" font-size="9.5" text-anchor="middle">Broadcast Announcements & CSV/PDF Export</text>
+
+    <!-- Connectors -->
+    <line x1="70" y1="70" x2="210" y2="50" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="70" y1="75" x2="370" y2="50" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="70" y1="80" x2="210" y2="100" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="70" y1="190" x2="370" y2="100" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="70" y1="195" x2="210" y2="150" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="630" y1="75" x2="330" y2="150" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="630" y1="190" x2="490" y2="150" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="630" y1="195" x2="425" y2="205" stroke="#94a3b8" stroke-width="1"/>
+  </svg>
+</div>
+  <div class="fig-caption">Fig. 4.1. Use Case Diagram</div>
+</div>
+
+<!-- PAGE 28: CHAPTER 4 SEQUENCE DIAGRAM -->
+<div class="page">
+  <div class="page-footer">18</div>
+
+  <h3 class="section-title">4.3 SEQUENCE DIAGRAM</h3>
+  <p class="justify">
+    A sequence diagram depicts the chronological message flow between React WebApp, JwtAuthenticationFilter, MemberController, MemberService, and PostgreSQL Database during authentication and point allocation requests.
+  </p>
+  <div style="text-align: center; margin: 15px 0;">
+  <svg width="100%" height="260" viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" style="background:#fcfcfc; border:1px solid #ddd; border-radius:6px;">
+    <!-- Lifeline Boxes -->
+    <rect x="30" y="15" width="100" height="28" rx="4" fill="#3b82f6" fill-opacity="0.1" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="80" y="33" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">React WebApp</text>
+    <line x1="80" y1="43" x2="80" y2="245" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+    <rect x="170" y="15" width="120" height="28" rx="4" fill="#8b5cf6" fill-opacity="0.1" stroke="#7c3aed" stroke-width="1.2"/>
+    <text x="230" y="33" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">JwtAuthFilter</text>
+    <line x1="230" y1="43" x2="230" y2="245" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+    <rect x="320" y="15" width="120" height="28" rx="4" fill="#10b981" fill-opacity="0.1" stroke="#059669" stroke-width="1.2"/>
+    <text x="380" y="33" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">MemberController</text>
+    <line x1="380" y1="43" x2="380" y2="245" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+    <rect x="470" y="15" width="100" height="28" rx="4" fill="#f59e0b" fill-opacity="0.1" stroke="#d97706" stroke-width="1.2"/>
+    <text x="520" y="33" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">LoyaltyService</text>
+    <line x1="520" y1="43" x2="520" y2="245" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+    <rect x="600" y="15" width="80" height="28" rx="4" fill="#64748b" fill-opacity="0.1" stroke="#475569" stroke-width="1.2"/>
+    <text x="640" y="33" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">PostgreSQL</text>
+    <line x1="640" y1="43" x2="640" y2="245" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+    <!-- Arrows -->
+    <!-- 1. POST /api/points/earn -->
+    <line x1="80" y1="70" x2="225" y2="70" stroke="#1e293b" stroke-width="1.2"/>
+    <polygon points="230,70 222,66 222,74" fill="#1e293b"/>
+    <text x="155" y="65" font-family="sans-serif" font-size="9" text-anchor="middle">1. POST /api/points/earn (Bearer JWT)</text>
+
+    <!-- 2. Validate Token -->
+    <line x1="230" y1="100" x2="375" y2="100" stroke="#1e293b" stroke-width="1.2"/>
+    <polygon points="380,100 372,96 372,104" fill="#1e293b"/>
+    <text x="305" y="95" font-family="sans-serif" font-size="9" text-anchor="middle">2. Validate Token & Set Role Context</text>
+
+    <!-- 3. Invoke Service -->
+    <line x1="380" y1="130" x2="515" y2="130" stroke="#1e293b" stroke-width="1.2"/>
+    <polygon points="520,130 512,126 512,134" fill="#1e293b"/>
+    <text x="450" y="125" font-family="sans-serif" font-size="9" text-anchor="middle">3. calculatePointsAndSave(bill)</text>
+
+    <!-- 4. Save Lot & Transaction -->
+    <line x1="520" y1="160" x2="635" y2="160" stroke="#1e293b" stroke-width="1.2"/>
+    <polygon points="640,160 632,156 632,164" fill="#1e293b"/>
+    <text x="580" y="155" font-family="sans-serif" font-size="9" text-anchor="middle">4. INSERT INTO point_lot, transaction</text>
+
+    <!-- 5. DB Commit -->
+    <line x1="640" y1="190" x2="525" y2="190" stroke="#64748b" stroke-width="1" stroke-dasharray="3 3"/>
+    <polygon points="520,190 528,186 528,194" fill="#64748b"/>
+    <text x="580" y="185" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#475569">5. Saved Entity</text>
+
+    <!-- 6. 200 OK Response -->
+    <line x1="520" y1="220" x2="85" y2="220" stroke="#2563eb" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <polygon points="80,220 88,216 88,224" fill="#2563eb"/>
+    <text x="300" y="215" font-family="sans-serif" font-size="9.5" text-anchor="middle" fill="#2563eb" font-weight="bold">6. HTTP 200 OK (Points Balance & Tier Updated)</text>
+  </svg>
+</div>
+  <div class="fig-caption">Fig. 4.2. Sequence Diagram</div>
+</div>
+
+<!-- PAGE 29: CHAPTER 4 DATA FLOW DIAGRAM -->
+<div class="page">
+  <div class="page-footer">19</div>
+
+  <h3 class="section-title">4.4 DATA FLOW DIAGRAM</h3>
+  <p class="justify">
+    The Data Flow Diagram (DFD) visualizes how user credentials, purchase bills, point transactions, and announcements move through system processes and data stores.
+  </p>
+  <div style="text-align: center; margin: 15px 0;">
+  <svg width="100%" height="260" viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" style="background:#fcfcfc; border:1px solid #ddd; border-radius:6px;">
+    <!-- External Entities -->
+    <rect x="20" y="40" width="100" height="40" fill="#e2e8f0" stroke="#334155" stroke-width="1.5"/>
+    <text x="70" y="65" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">User / Staff</text>
+
+    <rect x="20" y="180" width="100" height="40" fill="#e2e8f0" stroke="#334155" stroke-width="1.5"/>
+    <text x="70" y="205" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Super Admin</text>
+
+    <!-- Processes (Circles) -->
+    <circle cx="240" cy="60" r="30" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="240" y="57" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">1.0</text>
+    <text x="240" y="68" font-family="sans-serif" font-size="8.5" text-anchor="middle">Auth Engine</text>
+
+    <circle cx="240" cy="200" r="30" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="240" y="197" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">2.0</text>
+    <text x="240" y="208" font-family="sans-serif" font-size="8.5" text-anchor="middle">Points Engine</text>
+
+    <circle cx="460" cy="60" r="30" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="460" y="57" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">3.0</text>
+    <text x="460" y="68" font-family="sans-serif" font-size="8.5" text-anchor="middle">Reward Engine</text>
+
+    <circle cx="460" cy="200" r="30" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+    <text x="460" y="197" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">4.0</text>
+    <text x="460" y="208" font-family="sans-serif" font-size="8.5" text-anchor="middle">Audit & Fraud</text>
+
+    <!-- Data Stores (Open Rectangles) -->
+    <path d="M 590 40 L 680 40 M 590 70 L 680 70" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="635" y="52" font-family="sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">D1: Members</text>
+    <text x="635" y="64" font-family="sans-serif" font-size="8" text-anchor="middle">D2: Point Lots</text>
+
+    <path d="M 590 180 L 680 180 M 590 210 L 680 210" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="635" y="192" font-family="sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">D3: Transactions</text>
+    <text x="635" y="204" font-family="sans-serif" font-size="8" text-anchor="middle">D4: Notifications</text>
+
+    <!-- Connectors -->
+    <line x1="120" y1="60" x2="205" y2="60" stroke="#475569" stroke-width="1.2"/>
+    <polygon points="210,60 202,56 202,64" fill="#475569"/>
+    <text x="165" y="53" font-family="sans-serif" font-size="8" text-anchor="middle">Credentials</text>
+
+    <line x1="120" y1="195" x2="205" y2="195" stroke="#475569" stroke-width="1.2"/>
+    <polygon points="210,195 202,191 202,199" fill="#475569"/>
+    <text x="165" y="188" font-family="sans-serif" font-size="8" text-anchor="middle">Bill Amounts</text>
+
+    <line x1="270" y1="60" x2="425" y2="60" stroke="#475569" stroke-width="1.2"/>
+    <polygon points="430,60 422,56 422,64" fill="#475569"/>
+    <text x="350" y="53" font-family="sans-serif" font-size="8" text-anchor="middle">JWT Session Context</text>
+
+    <line x1="270" y1="200" x2="425" y2="200" stroke="#475569" stroke-width="1.2"/>
+    <polygon points="430,200 422,196 422,204" fill="#475569"/>
+    <text x="350" y="193" font-family="sans-serif" font-size="8" text-anchor="middle">Transaction Logs</text>
+
+    <line x1="490" y1="60" x2="585" y2="55" stroke="#475569" stroke-width="1.2"/>
+    <polygon points="590,55 582,51 582,59" fill="#475569"/>
+
+    <line x1="490" y1="200" x2="585" y2="195" stroke="#475569" stroke-width="1.2"/>
+    <polygon points="590,195 582,191 582,199" fill="#475569"/>
+  </svg>
+</div>
+  <div class="fig-caption">Fig. 4.3. Data Flow Diagram</div>
+</div>
+
+<!-- PAGE 30: CHAPTER 5 TESTING -->
+<div class="page">
+  <div class="page-footer">20</div>
+
+  <h2 class="chapter-title" style="margin-top: 30px;">CHAPTER 5<br>TESTING</h2>
+
+  <h3 class="section-title">5.1 UNIT TESTING</h3>
+  <p class="justify">
+    Unit testing forms the foundational layer of the testing process for the Enterprise Loyalty Rewards Management System project. It involves testing individual Java service methods, repository queries, and utility functions in isolation to identify issues early. Unit tests validate point calculations, FIFO lot deductions, and password hashing logic.
+  </p>
+
+  <h3 class="section-title">5.2 INTEGRATION TESTING</h3>
+  <p class="justify">
+    Integration testing validates seamless interaction between REST API endpoints, Spring Security filters, and PostgreSQL database queries. API endpoint responses for all 4 roles are tested to verify proper JSON response structure and HTTP status codes.
+  </p>
+
+  <h3 class="section-title">5.3 SECURITY AND AUTHENTICATION</h3>
+  <p class="justify">
+    JSON Web Tokens (JWTs) provide stateless user authentication. Upon successful login at <code>/api/members/login</code>, a signed JWT is issued containing user email, member ID, full name, and assigned role.
+  </p>
+</div>
+
+<!-- PAGE 31: CHAPTER 5 TOKEN LOCAL STORAGE -->
+<div class="page">
+  <div class="page-footer">21</div>
+
+  <p class="justify">
+    Requests include this bearer token in the <code>Authorization</code> header. The Spring Security filter chain validates token integrity and assigns role authorities (<code>ROLE_SUPER_ADMIN</code>, <code>ROLE_LOYALTY_MANAGER</code>, <code>ROLE_STAFF</code>, <code>ROLE_CUSTOMER</code>).
+  </p>
+  <div class="code-block" style="background:#1e1e1e; color:#d4d4d4; padding:10px 14px; border-radius:4px; font-size:9pt;">
+<span style="color:#6a9955">// Store JWT Token & Role Context in LocalStorage upon login</span>
+<span style="color:#569cd6">const</span> response = <span style="color:#569cd6">await</span> axios.post(<span style="color:#ce9178">'/api/members/login'</span>, { email, password });
+<span style="color:#c586c0">if</span> (response.data.token) {
+    localStorage.setItem(<span style="color:#ce9178">'token'</span>, response.data.token);
+    localStorage.setItem(<span style="color:#ce9178">'role'</span>, response.data.role);
+    localStorage.setItem(<span style="color:#ce9178">'memberName'</span>, response.data.fullName);
+    navigate(<span style="color:#ce9178">'/dashboard'</span>);
+}
+</div>
+  <div class="fig-caption">Fig. 5.1. Storing the Token in Local Storage</div>
+</div>
+
+<!-- PAGE 32: CHAPTER 5 BEARER TOKEN AUTHENTICATION -->
+<div class="page">
+  <div class="page-footer">22</div>
+
+  <div class="code-block" style="background:#1e1e1e; color:#d4d4d4; padding:10px 14px; border-radius:4px; font-size:9pt;">
+<span style="color:#6a9955">// Axios Interceptor attaching Bearer token to API Requests</span>
+axios.interceptors.request.use(config => {
+    <span style="color:#569cd6">const</span> token = localStorage.getItem(<span style="color:#ce9178">'token'</span>);
+    <span style="color:#c586c0">if</span> (token) {
+        config.headers.Authorization = <span style="color:#ce9178">`Bearer ${token}`</span>;
+    }
+    <span style="color:#c586c0">return</span> config;
+});
+</div>
+  <div class="fig-caption">Fig. 5.2. Authenticating the User using Bearer Token</div>
+
+  <h3 class="section-title">5.4 TEST CASES</h3>
+  <p class="justify">
+    Test cases evaluate system functionality including authentication, role enforcement, point allocation, and announcement dispatch.
+  </p>
+</div>
+
+<!-- PAGE 33: CHAPTER 5 TEST CASE I & II -->
+<div class="page">
+  <div class="page-footer">23</div>
+
+  <h4 class="subsection-title">5.4.1 TEST CASE I: Role-Based Authorization Enforcement</h4>
+  <div style="border: 1px stroke #f87171; background:#fef2f2; padding:15px; border-radius:6px; font-family:sans-serif; margin:10px 0;">
+  <div style="font-weight:bold; color:#991b1b; font-size:11pt;">⚠️ 403 Forbidden - Access Denied</div>
+  <div style="color:#7f1d1d; font-size:9.5pt; margin-top:4px;">
+    User role <code>ROLE_LOYALTY_MANAGER</code> is not authorized to access endpoint <code>GET /api/admin/audit-logs</code>.
+  </div>
+</div>
+  <div class="fig-caption">Fig. 5.3. Test Case I</div>
+  <p class="justify">
+    <strong>EXPECTED OUTPUT:</strong> System blocks unauthorized access and returns HTTP 403 Forbidden.<br>
+    <strong>ACTUAL OUTPUT:</strong> Backend rejects request with <code>403 Forbidden: Access Denied</code>.
+  </p>
+
+  <h4 class="subsection-title">5.4.2 TEST CASE II: Admin Announcement Dispatch</h4>
+  <div style="border: 1px stroke #4ade80; background:#f0fdf4; padding:15px; border-radius:6px; font-family:sans-serif; margin:10px 0;">
+  <div style="font-weight:bold; color:#166534; font-size:11pt;">✓ System Announcement Broadcast Successful</div>
+  <div style="color:#14532d; font-size:9.5pt; margin-top:4px;">
+    Announcement titled <em>"Quarterly Bonus Points Campaign"</em> sent to 1 Loyalty Managers and 9 Staff Members.
+  </div>
+</div>
+  <div class="fig-caption">Fig. 5.4. Test Case II</div>
+</div>
+
+<!-- PAGE 34: CHAPTER 5 TEST CASE II OUTPUT -->
+<div class="page">
+  <div class="page-footer">24</div>
+
+  <p class="justify" style="margin-top: 40px;">
+    <strong>EXPECTED OUTPUT:</strong> Announcement is created for all active managers and staff, excluding customers.<br>
+    <strong>ACTUAL OUTPUT:</strong> System displays <code>✓ Announcement sent to 1 managers and 9 staff members</code>. Announcement appears in manager/staff notification bell dropdown with 📢 icon and is hidden for customers.
+  </p>
+</div>
+
+<!-- PAGE 35: CHAPTER 6 CONCLUSION AND FUTURE WORK -->
+<div class="page">
+  <div class="page-footer">25</div>
+
+  <h2 class="chapter-title" style="margin-top: 30px;">CHAPTER 6<br>CONCLUSION AND FUTURE WORK</h2>
+
+  <h3 class="section-title">6.1 CONCLUSION</h3>
+  <p class="justify">
+    The Enterprise Loyalty Rewards Management System project successfully addresses the challenges of customer retention, reward accounting, and security governance in retail commerce. By providing a full-stack platform built with ReactJS, Java Spring Boot, and PostgreSQL, the system delivers mathematical transparency, real-time transaction auditability, and automated point expiry management. The implementation of strict backend Role-Based Access Control (RBAC) ensures that privacy and authorization boundaries are enforced across all 4 system roles, eliminating unauthorized account access and fraud exposure. Overall, this project represents a significant step forward in modern digital customer loyalty solutions.
+  </p>
+
+  <h3 class="section-title">6.2 FUTURE WORK</h3>
+  <p class="justify">
+    Future enhancements could include developing native iOS and Android mobile applications using React Native to offer mobile push notifications and barcode scanning for instant store checkout point crediting. Additionally, integrating machine learning models for predictive customer churn analysis and personalized reward recommendations would further enhance commercial value for retail enterprises.
+  </p>
+</div>
+
+<!-- PAGE 36: CHAPTER 7 APPENDICES - SOURCE CODE PART 1 -->
+<div class="page">
+  <div class="page-footer">26</div>
+
+  <h2 class="chapter-title" style="margin-top: 30px;">CHAPTER 7<br>APPENDICES<br>APPENDIX I: SOURCE CODE</h2>
+
+  <div class="bold" style="margin-bottom: 8px;">MemberController.java (Excerpt)</div>
+  <div class="code-block">
+package com.loyalty.rewards.controller;
+
+import com.loyalty.rewards.model.Member;
+import com.loyalty.rewards.model.Role;
+import com.loyalty.rewards.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
+
+@RestController
+@RequestMapping("/api/members")
+public class MemberController {
+
+    @Autowired
+    private MemberService memberService;
+
+    @GetMapping("/{id}")
+    public ResponseEntity&lt;Member&gt; getMemberById(@PathVariable Long id, Authentication authentication) {
+        Member current = (Member) authentication.getPrincipal();
+        if (current.getRole() == Role.CUSTOMER && !current.getMemberId().equals(id)) {
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Customers can only view own profile.");
+        }
+        Member target = memberService.getMemberById(id);
+        if (current.getRole() == Role.STAFF && target.getRole() != Role.CUSTOMER) {
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "STAFF can view CUSTOMER profiles only.");
+        }
+        if (current.getRole() == Role.LOYALTY_MANAGER && target.getRole() == Role.SUPER_ADMIN) {
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "LOYALTY_MANAGER cannot view SUPER_ADMIN details.");
+        }
+        return ResponseEntity.ok(target);
+    }
+}
+  </div>
+</div>
+
+<!-- PAGE 37: CHAPTER 7 SOURCE CODE PART 2 -->
+<div class="page">
+  <div class="page-footer">27</div>
+
+  <div class="bold" style="margin-bottom: 8px;">NotificationController.java (Announcement Excerpt)</div>
+  <div class="code-block">
+    @PostMapping("/announcement")
+    public ResponseEntity&lt;Map&lt;String, Object&gt;&gt; sendAnnouncement(
+            @RequestBody Map&lt;String, String&gt; body,
+            Authentication authentication) {
+        
+        Member current = (Member) authentication.getPrincipal();
+        if (current == null || current.getRole() != Role.SUPER_ADMIN) {
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Access Denied: Only SUPER_ADMIN users can send system announcements.");
+        }
+
+        String title = body.get("title");
+        String message = body.get("message");
+
+        Map&lt;String, Object&gt; result = notificationService.sendAnnouncement(title, message, current);
+        return ResponseEntity.ok(result);
+    }
+  </div>
+</div>
+
+<!-- PAGE 38: APPENDIX II SCREENSHOTS PART 1 -->
+<div class="page">
+  <div class="page-footer">28</div>
+
+  <h2 class="chapter-title" style="margin-top: 30px;">APPENDIX II: SCREENSHOTS</h2>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#4c1d95; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>Admin Portal Login</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <div style="max-width:280px; margin:10px auto; background:#fff; padding:12px; border-radius:4px; border:1px solid #e2e8f0; text-align:center;">
+          <div style="font-weight:bold; color:#4c1d95; margin-bottom:8px;">Enterprise Admin Sign In</div>
+          <input type="text" value="admin@loyalty.com" style="width:90%; padding:4px; margin-bottom:6px; border:1px solid #ccc; border-radius:3px; font-size:8.5pt;" disabled/>
+          <input type="password" value="••••••••••••" style="width:90%; padding:4px; margin-bottom:8px; border:1px solid #ccc; border-radius:3px; font-size:8.5pt;" disabled/>
+          <button style="background:#4c1d95; color:#fff; border:none; padding:5px 15px; border-radius:3px; font-size:8.5pt; width:95%;">Sign In as Admin</button>
+        </div>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.1. Admin Login</div>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#4c1d95; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>Super Admin Overview</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <div style="display:flex; gap:10px; margin-bottom:10px;">
+          <div style="flex:1; background:#fff; padding:10px; border-radius:4px; border:1px solid #e2e8f0; text-align:center;"><span style="color:#6b21a8; font-size:14pt; font-weight:bold;">1,245</span><br><span style="font-size:8pt; color:#64748b;">Total Members</span></div>
+          <div style="flex:1; background:#fff; padding:10px; border-radius:4px; border:1px solid #e2e8f0; text-align:center;"><span style="color:#2563eb; font-size:14pt; font-weight:bold;">48,900</span><br><span style="font-size:8pt; color:#64748b;">Points Balance</span></div>
+          <div style="flex:1; background:#fff; padding:10px; border-radius:4px; border:1px solid #e2e8f0; text-align:center;"><span style="color:#dc2626; font-size:14pt; font-weight:bold;">2</span><br><span style="font-size:8pt; color:#64748b;">Fraud Flags</span></div>
+        </div>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.2. Admin Dashboard</div>
+</div>
+
+<!-- PAGE 39: APPENDIX II SCREENSHOTS PART 2 -->
+<div class="page">
+  <div class="page-footer">29</div>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#4c1d95; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>Member Roster & Governance</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <table style="width:100%; border-collapse:collapse; background:#fff; border:1px solid #e2e8f0; font-size:8pt;">
+          <tr style="background:#f8fafc; font-weight:bold;">
+            <th style="padding:4px; border:1px solid #e2e8f0;">ID</th><th style="padding:4px; border:1px solid #e2e8f0;">Name</th><th style="padding:4px; border:1px solid #e2e8f0;">Email</th><th style="padding:4px; border:1px solid #e2e8f0;">Role</th><th style="padding:4px; border:1px solid #e2e8f0;">Tier</th>
+          </tr>
+          <tr><td style="padding:4px; border:1px solid #e2e8f0;">#101</td><td style="padding:4px; border:1px solid #e2e8f0;">Karthick G</td><td style="padding:4px; border:1px solid #e2e8f0;">karthick@example.com</td><td style="padding:4px; border:1px solid #e2e8f0;"><span style="background:#d8b4fe; color:#581c87; padding:1px 4px; border-radius:2px;">SUPER_ADMIN</span></td><td style="padding:4px; border:1px solid #e2e8f0;">Platinum</td></tr>
+          <tr><td style="padding:4px; border:1px solid #e2e8f0;">#102</td><td style="padding:4px; border:1px solid #e2e8f0;">Gayathri K</td><td style="padding:4px; border:1px solid #e2e8f0;">gayathri@example.com</td><td style="padding:4px; border:1px solid #e2e8f0;"><span style="background:#fed7aa; color:#9a3412; padding:1px 4px; border-radius:2px;">STAFF</span></td><td style="padding:4px; border:1px solid #e2e8f0;">Gold</td></tr>
+        </table>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.3. Member Management Roster</div>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#4c1d95; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>Points Allocation Portal</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <div style="background:#fff; padding:12px; border-radius:4px; border:1px solid #e2e8f0; display:flex; gap:15px; align-items:center;">
+          <div style="flex:1;">
+            <label style="font-size:8pt; font-weight:bold; display:block;">Select Member:</label>
+            <input type="text" value="Karthick Geethanath (#101)" style="width:90%; padding:3px; font-size:8pt; border:1px solid #ccc; margin-bottom:6px;" disabled/>
+            <label style="font-size:8pt; font-weight:bold; display:block;">Purchase Bill Amount (₹):</label>
+            <input type="text" value="₹ 2,500.00" style="width:90%; padding:3px; font-size:8pt; border:1px solid #ccc;" disabled/>
+          </div>
+          <div style="flex:1; background:#f0fdf4; padding:10px; border-radius:4px; border:1px stroke #86efac; text-align:center;">
+            <div style="font-size:8pt; color:#166534; font-weight:bold;">Calculated Points Earned</div>
+            <div style="font-size:18pt; font-weight:bold; color:#15803d; margin:4px 0;">+250 PTS</div>
+            <button style="background:#16a34a; color:#fff; border:none; padding:4px 10px; border-radius:3px; font-size:8pt;">Confirm & Credit Points</button>
+          </div>
+        </div>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.4. Earn & Deduct Points Portal</div>
+</div>
+
+<!-- PAGE 40: APPENDIX II SCREENSHOTS PART 3 -->
+<div class="page">
+  <div class="page-footer">30</div>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#4c1d95; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>Transaction Audit Ledger</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+          <span style="font-weight:bold; font-size:8.5pt;">Audit Records (Filter: EARN / DEDUCT)</span>
+          <div>
+            <button style="background:#2563eb; color:#fff; border:none; padding:2px 8px; border-radius:3px; font-size:7.5pt; margin-right:4px;">Export CSV</button>
+            <button style="background:#dc2626; color:#fff; border:none; padding:2px 8px; border-radius:3px; font-size:7.5pt;">Export PDF Report</button>
+          </div>
+        </div>
+        <table style="width:100%; border-collapse:collapse; background:#fff; border:1px solid #e2e8f0; font-size:7.5pt;">
+          <tr style="background:#f1f5f9;"><th>Tx ID</th><th>Type</th><th>Bill ₹</th><th>Points</th><th>Performed By</th><th>Timestamp</th></tr>
+          <tr><td>#TX-8801</td><td>EARN</td><td>₹ 2,500</td><td>+250</td><td>Store Staff #102</td><td>2025-08-15 14:30</td></tr>
+          <tr><td>#TX-8802</td><td>REDEEM</td><td>-</td><td>-100</td><td>Customer #101</td><td>2025-08-15 16:10</td></tr>
+        </table>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.5. Transaction Ledger Audit & Export</div>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#1e293b; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>Customer Login Page</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <div style="max-width:260px; margin:10px auto; background:#fff; padding:10px; border-radius:4px; border:1px solid #e2e8f0; text-align:center;">
+          <div style="font-weight:bold; color:#1e293b; margin-bottom:6px;">Customer Loyalty Portal</div>
+          <input type="text" value="customer@example.com" style="width:90%; padding:3px; margin-bottom:5px; border:1px solid #ccc; font-size:8pt;" disabled/>
+          <input type="password" value="••••••••" style="width:90%; padding:3px; margin-bottom:6px; border:1px solid #ccc; font-size:8pt;" disabled/>
+          <button style="background:#2563eb; color:#fff; border:none; padding:4px 12px; border-radius:3px; font-size:8pt; width:95%;">Sign In</button>
+        </div>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.6. User Login Page</div>
+</div>
+
+<!-- PAGE 41: APPENDIX II SCREENSHOTS PART 4 -->
+<div class="page">
+  <div class="page-footer">31</div>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#047857; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>Customer Registration Page</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <div style="max-width:280px; margin:5px auto; background:#fff; padding:10px; border-radius:4px; border:1px solid #e2e8f0;">
+          <div style="font-size:8pt; font-weight:bold; margin-bottom:4px;">Join Enterprise Rewards</div>
+          <input type="text" value="Karthick Geethanath" style="width:90%; padding:3px; margin-bottom:4px; border:1px solid #ccc; font-size:7.5pt;" disabled/>
+          <input type="text" value="karthick@example.com" style="width:90%; padding:3px; margin-bottom:4px; border:1px solid #ccc; font-size:7.5pt;" disabled/>
+          <button style="background:#16a34a; color:#fff; border:none; padding:4px 12px; border-radius:3px; font-size:8pt; width:95%;">Register Account</button>
+        </div>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.7. User Registration Page</div>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#1d4ed8; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>Customer Rewards Dashboard</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <div style="display:flex; gap:10px;">
+          <div style="flex:1; background:#fff; padding:10px; border-radius:4px; border:1px solid #e2e8f0; text-align:center;">
+            <div style="font-size:8pt; color:#64748b;">Available Points</div>
+            <div style="font-size:18pt; font-weight:bold; color:#2563eb;">1,450 PTS</div>
+          </div>
+          <div style="flex:1; background:#fff; padding:10px; border-radius:4px; border:1px solid #e2e8f0;">
+            <div style="font-size:8pt; color:#64748b; font-weight:bold;">Tier: Platinum 👑</div>
+            <div style="font-size:7.5pt; color:#475569; margin:4px 0;">Next Tier: Diamond (550 pts away)</div>
+            <div style="background:#e2e8f0; height:6px; border-radius:3px; overflow:hidden;"><div style="background:#2563eb; width:72%; height:100%;"></div></div>
+          </div>
+        </div>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.8. User Dashboard</div>
+</div>
+
+<!-- PAGE 42: APPENDIX II SCREENSHOTS PART 5 -->
+<div class="page">
+  <div class="page-footer">32</div>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#b45309; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>Reward Catalog</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <div style="display:flex; gap:10px;">
+          <div style="flex:1; background:#fff; padding:8px; border-radius:4px; border:1px solid #e2e8f0; text-align:center;">
+            <div style="font-weight:bold; font-size:8pt;">₹500 Shopping Voucher</div>
+            <div style="color:#d97706; font-weight:bold; font-size:9pt; margin:3px 0;">500 PTS</div>
+            <button style="background:#d97706; color:#fff; border:none; padding:3px 8px; border-radius:2px; font-size:7.5pt;">Redeem Now</button>
+          </div>
+          <div style="flex:1; background:#fff; padding:8px; border-radius:4px; border:1px solid #e2e8f0; text-align:center;">
+            <div style="font-weight:bold; font-size:8pt;">Free Merchandise Pass</div>
+            <div style="color:#d97706; font-weight:bold; font-size:9pt; margin:3px 0;">1,000 PTS</div>
+            <button style="background:#d97706; color:#fff; border:none; padding:3px 8px; border-radius:2px; font-size:7.5pt;">Redeem Now</button>
+          </div>
+        </div>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.9. Reward Catalog & Redemption</div>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#475569; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>Notification Bell Dropdown</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:4px; padding:8px; max-width:300px;">
+          <div style="font-weight:bold; font-size:8pt; border-bottom:1px solid #eee; padding-bottom:4px; color:#475569;">📢 System Announcements (1 New)</div>
+          <div style="font-size:7.5pt; color:#1e293b; margin-top:4px;"><strong>Quarterly Bonus Points:</strong> Earn 2x points on all purchases above ₹1,000 until end of month!</div>
+        </div>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.10. System Announcement Bell Dropdown</div>
+
+  <div style="border: 1px solid #ddd; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-family:sans-serif; margin:10px 0; height:190px; background:#fafafa;">
+  <div style="background:#4c1d95; color:#fff; padding:8px 15px; font-size:10pt; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+    <span>User Profile Management</span>
+    <span style="font-size:8pt; opacity:0.8;">Enterprise Loyalty Portal</span>
+  </div>
+  <div style="padding:12px; font-size:9pt; color:#333;">
+    <div style="background:#fff; padding:8px; border-radius:4px; border:1px solid #e2e8f0; font-size:8pt; max-width:320px; margin:0 auto;">
+          <div><strong>Full Name:</strong> Karthick Geethanath</div>
+          <div><strong>Email:</strong> karthick@example.com</div>
+          <div><strong>Role:</strong> <span style="background:#d8b4fe; color:#581c87; padding:1px 4px; border-radius:2px;">SUPER_ADMIN</span></div>
+          <div style="margin-top:6px;"><button style="background:#4c1d95; color:#fff; border:none; padding:3px 8px; border-radius:2px; font-size:7.5pt;">Update Password</button></div>
+        </div>
+  </div>
+</div>
+  <div class="fig-caption">Fig. A.2.11. User Profile Management</div>
+</div>
+
+<!-- PAGE 43: REFERENCES -->
+<div class="page">
+  <div class="page-footer">33</div>
+
+  <h2 class="chapter-title" style="margin-top: 40px;">REFERENCES</h2>
+
+  <h4 class="subsection-title">Web references:</h4>
+  <p>[1] PostgreSQL Official Documentation: <a href="https://www.postgresql.org/docs/" target="_blank">https://www.postgresql.org/docs/</a></p>
+  <p>[2] React Official Documentation: <a href="https://reactjs.org/docs/getting-started.html" target="_blank">https://reactjs.org/docs/getting-started.html</a></p>
+  <p>[3] Spring Boot Official Documentation: <a href="https://spring.io/projects/spring-boot" target="_blank">https://spring.io/projects/spring-boot</a></p>
+  <p>[4] OpenPDF Official Documentation: <a href="https://github.com/LibrePDF/OpenPDF" target="_blank">https://github.com/LibrePDF/OpenPDF</a></p>
+  <p>[5] Java Extensions for Visual Studio Code Documentation: <a href="https://code.visualstudio.com/docs/java/extensions" target="_blank">https://code.visualstudio.com/docs/java/extensions</a></p>
+
+  <h4 class="subsection-title" style="margin-top: 25px;">Book references:</h4>
+  <p>[1] John Smith (2022), <em>Enterprise Loyalty & Customer Retention Systems: Architecture and Design</em>, Tech Commerce Publishers.</p>
+  <p>[2] Emily Johnson (2021), <em>Building Modern Web Applications with React and Spring Boot</em>, Software Engineering Books.</p>
+  <p>[3] Michael Brown (2022), <em>Role-Based Access Control and Security in Distributed Systems</em>, Cybersecurity Press.</p>
+  <p>[4] Laura Davis (2021), <em>Automated Reward Systems and Financial Auditability</em>, Enterprise Systems Publications.</p>
+  <p>[5] Rachel Wilson (2022), <em>Digital Customer Loyalty: Analytics, Fraud Prevention, and Engagement</em>, Business Tech Innovations.</p>
+  <p>[6] Sarah Miller (2021), <em>Full-Stack Web Development with React, Spring Security, and PostgreSQL</em>, Academic Tech Resources.</p>
+</div>
+
+</body>
+</html>
