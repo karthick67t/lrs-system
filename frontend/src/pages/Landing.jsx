@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { apiFetch } from '../utils/api';
 import {
   FaAward,
   FaShieldAlt,
@@ -105,12 +106,8 @@ export const Landing = () => {
     setSubmitting(true);
 
     try {
-      const response = await fetch('/api/complaints', {
+      await apiFetch('/api/complaints', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-        },
         body: JSON.stringify({
           fullName: complaintForm.fullName.trim(),
           email: complaintForm.email.trim(),
@@ -119,18 +116,6 @@ export const Landing = () => {
           message: complaintForm.message.trim(),
         }),
       });
-
-      if (!response.ok) {
-        const errorText = await response.text().catch(() => '');
-        let msg = `Submission failed (${response.status}).`;
-        try {
-          const parsed = JSON.parse(errorText);
-          if (parsed.message) msg = parsed.message;
-        } catch (err) {
-          if (errorText) msg = errorText;
-        }
-        throw new Error(msg);
-      }
 
       setSubmitSuccess('Your complaint has been submitted successfully. Our team will review it shortly.');
       setComplaintForm({
